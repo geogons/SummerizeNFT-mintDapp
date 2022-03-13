@@ -137,12 +137,6 @@ module.exports = {
     deployer: {
       default: 0, // here this will by default take the first account as deployer
     },
-   /* erc721base: {
-      // this is the erc721base logic contract deployment
-      "mainnet": '0x43955024b1985E2b933A59021500aE5f55b04091',
-      // this is the erc721base logic contract deployment
-      "rinkeby": '0x86c67a16C16BF784BdFE7D4b7575dB664D191F88',
-    }, */
   },
 };
 

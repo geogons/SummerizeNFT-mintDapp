@@ -24,7 +24,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   await deploy("KnotDAO", {
     // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
     from: deployer,
-    args: [ "https://gateway.pinata.cloud/ipfs/bafybeicmx4ryfxi5kxtf22rdimqxcjpoxtyu3km4lga3fi3gnspdbxwpyi" ],
+    args: [ "https://gateway.pinata.cloud/ipfs/bafybeihjpemz4xogdysizan3sfed25pnuxemchcczk6ygf2nrtd4yaifzm/" ],
     log: true,
   });
 
