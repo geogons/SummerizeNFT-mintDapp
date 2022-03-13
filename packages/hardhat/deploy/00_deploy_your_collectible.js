@@ -9,21 +9,22 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
   console.log("\n\n 📡 Deploying...\n");
 
+
   // read in all the assets to get their IPFS hash...
-  let uploadedAssets = JSON.parse(fs.readFileSync("./uploaded.json"))
+  /*let uploadedAssets = JSON.parse(fs.readFileSync("./uploaded.json"))
   let bytes32Array = []
   for(let a in uploadedAssets){
     console.log(" 🏷 IPFS:",a)
     let bytes32 = ethers.utils.id(a)
     console.log(" #️⃣ hashed:",bytes32)
     bytes32Array.push(bytes32)
-  }
+  } */
   console.log(" \n")
 
-  await deploy("YourCollectible", {
+  await deploy("KnotDAO", {
     // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
     from: deployer,
-    args: [ bytes32Array ],
+    args: [ "https://gateway.pinata.cloud/ipfs/bafybeicmx4ryfxi5kxtf22rdimqxcjpoxtyu3km4lga3fi3gnspdbxwpyi" ],
     log: true,
   });
 
@@ -63,7 +64,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   });
   */
 };
-module.exports.tags = ["YourCollectible"];
+module.exports.tags = ["KnotDAO"];
 
 /*
 Tenderly verification
